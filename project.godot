@@ -8,9 +8,14 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Node2D",
+"class": "AbsModul",
+"language": "GDScript",
+"path": "res://scripts/AbsModul.gd"
+} ]
 _global_script_class_icons={
-
+"AbsModul": ""
 }
 
 [application]
@@ -18,6 +23,10 @@ _global_script_class_icons={
 config/name="Flowerleben"
 run/main_scene="res://scenes/Main.tscn"
 config/icon="res://Assets/icon.png"
+
+[autoload]
+
+Global="*res://scripts/Global.gd"
 
 [display]
 
